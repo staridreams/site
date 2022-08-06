@@ -9,3 +9,6 @@ build:
 
 run: build
 	(cd dist; ./blog) & (cd svelte; yarn preview)
+
+test:
+	(cd api; cargo test -p blog) & (cd svelte; yarn test)
