@@ -1225,6 +1225,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^1.1.1":
+  version: 1.2.1
+  resolution: "clsx@npm:1.2.1"
+  checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -1334,6 +1341,13 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: f8c4ababffbc5e2ddf2fa9957dda1ee4af6048e22aeda1869d0d00843223c1b13ad3f5d88b51caa46c994225eacb636b764eb807a8883e2fb6f99b4f4e8c48b2
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.10":
+  version: 3.1.0
+  resolution: "csstype@npm:3.1.0"
+  checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
   languageName: node
   linkType: hard
 
@@ -4254,6 +4268,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svelte-body@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "svelte-body@npm:1.3.6"
+  dependencies:
+    clsx: ^1.1.1
+    csstype: ^3.0.10
+  checksum: 8e54bdbd6c3b08edc15e982f475b45fd9da097a23f72bf7221adb01c2ed7e50e2cffcd0bfed1a92456d4e690c493f3840995b5d887183dce7412ae05fdc45ad3
+  languageName: node
+  linkType: hard
+
 "svelte-check@npm:^2.7.1":
   version: 2.8.0
   resolution: "svelte-check@npm:2.8.0"
@@ -4361,6 +4385,7 @@ __metadata:
     prettier: ^2.6.2
     prettier-plugin-svelte: ^2.7.0
     svelte: ^3.44.0
+    svelte-body: ^1.3.6
     svelte-check: ^2.7.1
     svelte-preprocess: ^4.10.7
     tailwindcss: ^3.1.5
