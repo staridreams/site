@@ -4,9 +4,12 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"serve": "node ./dist",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"test": "playwright test",
+		"test:vitest": "vitest --run",
+		"test:cypress": "cypress run",
+		"test": "yarn test:vitest; yarn test:cypress",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
@@ -15,9 +18,13 @@
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-node": "next",
 		"@sveltejs/kit": "next",
+		"@testing-library/svelte": "^3.1.3",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
+		"@vitest/ui": "^0.21.0",
+		"cypress": "^10.4.0",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -28,7 +35,8 @@
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
-		"vite": "^3.0.0"
+		"vite": "^3.0.0",
+		"vitest": "^0.21.0"
 	},
 	"type": "module"
 }
