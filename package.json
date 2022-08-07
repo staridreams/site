@@ -9,11 +9,13 @@
       "lint-staged": "^13.0.3",
       "prettier": "^2.7.1",
       "prettier-eslint": "^15.0.1",
+      "prettier-plugin-svelte": "^2.7.0",
       "prettier-plugin-tailwindcss": "^0.1.13",
+      "rimraf": "^3.0.2",
       "stylelint-config-standard-scss": "^5.0.0",
       "typescript": "^4.7.4"
    },
    "scripts": {
-      "prepare": "husky install"
+      "prepare": "rimraf ./.husky && husky install && chmod ug+x .husky/* && husky add .husky/pre-commit 'yarn lint-staged'"
    }
 }
