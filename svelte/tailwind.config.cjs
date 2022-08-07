@@ -1,13 +1,13 @@
 const config = {
-	mode: 'jit',
-	darkMode: 'class',
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+   mode: 'jit',
+   darkMode: 'class',
+   content: ['./src/**/*.{html,js,svelte,ts}'],
 
-	theme: {
-		extend: {}
-	},
+   theme: {
+      extend: {}
+   },
 
-	plugins: []
+   plugins: []
 };
 
 module.exports = config;

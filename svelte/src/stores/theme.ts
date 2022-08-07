@@ -1,13 +1,15 @@
-import { browser } from '$app/env'
-import { writable } from 'svelte/store'
+import { browser } from '$app/env';
+import { writable } from 'svelte/store';
 
 const defaultTheme = 'dark';
-const initialTheme = browser ? window.localStorage.getItem('theme') ?? defaultTheme : defaultTheme
+const initialTheme = browser
+   ? window.localStorage.getItem('theme') ?? defaultTheme
+   : defaultTheme;
 
 const theme = writable<string>(initialTheme);
 
 theme.subscribe((value) => {
-    browser && window.localStorage.setItem('theme', value)
-})
+   browser && window.localStorage.setItem('theme', value);
+});
 
-export {theme};
+export { theme };
