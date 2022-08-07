@@ -1,7 +1,7 @@
 {
    "*.scss": "npx stylelint --fix",
    "**/svelte/**/*.{svelte,ts,js}": [
-      "prettier --config ./svelte/.prettierrc.json --plugin-search-dir ./svelte --write",
-      "eslint --config ./svelte/.eslintrc.cjs --resolve-plugins-relative-to ./svelte --fix"
+      "./svelte/node_modules/.bin/prettier --config ./.prettierrc.json --plugin-search-dir ./svelte --write",
+      "./svelte/node_modules/.bin/eslint --config ./svelte/.eslintrc.cjs --resolve-plugins-relative-to ./svelte --fix"
    ]
 }

@@ -29,7 +29,7 @@
     "dot-notation": ["error"],
     "eqeqeq": ["error"],
     "func-call-spacing": ["error", "never"],
-    "indent": ["error", 2],
+    "indent": ["error", 3],
     "key-spacing": ["error"],
     "keyword-spacing": ["error"],
     "linebreak-style": ["error"],
