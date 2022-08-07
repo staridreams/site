@@ -1,1 +1,9 @@
-dist
+**/node_modules
+**/.DS_Store
+**/.env
+**/.vscode
+**/dist
+**/coverage
+**/cypress/videos
+**/cypress/screenshots
+**/cypress/downloads
