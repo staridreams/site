@@ -1,0 +1,13 @@
+{
+   "folders": [
+      {
+         "path": "svelte"
+      },
+      {
+         "path": "./"
+      }
+   ],
+   "settings": {
+      "vitest.commandLine": "pwd"
+   }
+}
