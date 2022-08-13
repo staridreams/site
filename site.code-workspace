@@ -6,8 +6,5 @@
       {
          "path": "./"
       }
-   ],
-   "settings": {
-      "vitest.commandLine": "pwd"
-   }
+   ]
 }
