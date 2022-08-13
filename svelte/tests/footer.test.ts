@@ -1,10 +1,10 @@
 import { render } from '@testing-library/svelte';
 import { describe, expect, it } from 'vitest';
-import Nav from '../src/components/nav.svelte';
+import Footer from '../src/components/footer.svelte';
 
 describe('components | nav', () => {
    it('should render', () => {
-      const { container } = render(Nav);
+      const { container } = render(Footer);
       expect(container).toBeTruthy();
    });
 });
