@@ -3,6 +3,6 @@
 </script>
 
 <svelte:head>
-   <title>starbunn | blog</title>
+   <title>starbunn | about</title>
 </svelte:head>
 <ContentWrapper />
