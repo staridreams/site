@@ -1,4 +1,7 @@
 <script lang="ts">
+   import { theme } from '@/stores/theme';
+   import Icon from '@iconify/svelte';
+
    const routes = [
       {
          name: 'projects',
@@ -15,6 +18,7 @@
    ];
 
    import { page } from '$app/stores';
+   import ThemeToggle from './theme-toggle.svelte';
 </script>
 
 <nav class="h-16 w-full p-1 py-5 md:flex md:items-center md:justify-center">
@@ -29,4 +33,5 @@
          </li>
       {/each}
    </ul>
+   <ThemeToggle />
 </nav>
