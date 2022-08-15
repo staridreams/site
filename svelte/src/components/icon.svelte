@@ -6,6 +6,10 @@
    export let target = '_blank';
 </script>
 
-<a {href} {target} class="transition duration-200 hover:text-slate-700">
+<a
+   {href}
+   {target}
+   class="text-lg transition-all duration-300 hover:text-slate-500 hover:duration-200 md:text-xl"
+>
    <Icon {icon} />
 </a>

@@ -21,17 +21,12 @@
    <h1 class="text-bold text-xl md:absolute md:left-4">Logo</h1>
    <ul class="max-h-16 md:flex md:items-center md:justify-between">
       {#each routes as route}
-         {#if route.path === $page.url.pathname}
-            <li
-               class="underliner duration-200 [font-weight:450] sm:my-3 md:mx-14 md:my-0"
-            >
-               <a href={route.path}>{route.name}</a>
-            </li>
-         {:else}
-            <li class="underliner duration-200 sm:my-3 md:mx-14 md:my-0">
-               <a href={route.path}>{route.name}</a>
-            </li>
-         {/if}
+         <li
+            class="underliner transition duration-200 [font-weight:550] sm:my-3 md:mx-14 md:my-0"
+            class:[font-weight:550]={route.path === $page.url.pathname}
+         >
+            <a href={route.path}>{route.name}</a>
+         </li>
       {/each}
    </ul>
 </nav>
