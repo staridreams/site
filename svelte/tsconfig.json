@@ -19,6 +19,6 @@
       "skipLibCheck": true,
       "sourceMap": true,
       "strict": true,
-      "types": ["cypress", "vitest/globals", "node"]
+      "types": ["cypress", "vitest/globals", "node", "svelte3"]
    }
 }
