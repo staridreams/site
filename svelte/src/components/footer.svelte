@@ -17,7 +17,7 @@
    ];
 </script>
 
-<footer class="absolute bottom-6 left-5">
+<footer class="absolute bottom-12 left-10">
    <ul class="flex items-center justify-between">
       {#each socials as social}
          <li class="mx-4">

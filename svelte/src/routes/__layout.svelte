@@ -21,3 +21,26 @@
    <slot />
 </PageTransition>
 <Footer />
+
+<style lang="postcss">
+   :global(body),
+   :global(html) {
+      height: 100vh;
+      transition: background 150ms ease;
+   }
+
+   :global(body.light) {
+      background-color: #eff1f5;
+      --textColour: 76 79 105;
+   }
+
+   :global(body.dark) {
+      background-color: #24273a;
+      --textColor: 202 211 245;
+   }
+
+   :global(::selection) {
+      background: #ee99a0;
+      color: #1e293b;
+   }
+</style>
