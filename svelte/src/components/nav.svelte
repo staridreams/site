@@ -24,7 +24,11 @@
 <nav
    class="h-16 max-w-sm p-1 py-5 md:flex md:w-full md:max-w-none md:items-center md:justify-center"
 >
-   <h1 class="text-bold text-primary text-xl md:absolute md:left-4">Logo</h1>
+   <h1
+      class="text-bold text-primary font-code text-xl italic md:absolute md:left-4"
+   >
+      Logo
+   </h1>
    <ThemeToggle />
    <ul class="max-h-16 md:flex md:items-center md:justify-between">
       {#each routes as route}

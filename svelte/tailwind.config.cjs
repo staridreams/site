@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 const config = {
    mode: 'jit',
@@ -6,6 +8,12 @@ const config = {
 
    theme: {
       extend: {
+         fontFamily: {
+            sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+            display: ['Outfit', ...defaultTheme.fontFamily.sans],
+            mono: ['Work Sans', ...defaultTheme.fontFamily.mono],
+            code: ['bunni', ...defaultTheme.fontFamily.mono]
+         },
          colors: {
             primary: 'rgb(var(--textColor) / <alpha-value>)'
          }
