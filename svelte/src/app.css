@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 @font-face {
-   font-family: "bunni";
-   src: url("/bunni-regular.ttf") format ("truetype") url("/bunni-bold.ttf") format ("truetype") url("/bunni-italic.ttf") format ("truetype");
+   font-family: 'bunni';
+   src: url('/bunni-regular.ttf') format ('truetype') url('/bunni-bold.ttf')
+      format ('truetype') url('/bunni-italic.ttf') format ('truetype');
 }

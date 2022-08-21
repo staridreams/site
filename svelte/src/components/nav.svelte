@@ -1,7 +1,4 @@
 <script lang="ts">
-   import { theme } from '@/stores/theme';
-   import Icon from '@iconify/svelte';
-
    const routes = [
       {
          name: 'projects',
