@@ -31,7 +31,7 @@
 
    :global(body.light) {
       background-color: #eff1f5;
-      --textColour: 76 79 105;
+      --textColor: 76 79 105;
    }
 
    :global(body.dark) {
