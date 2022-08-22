@@ -3,7 +3,6 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import rehype_katex from 'rehype-katex';
 import gfm from 'remark-gfm';
 import math from 'remark-math';
-import toml from 'toml';
 import { visit } from 'unist-util-visit';
 
 const correct_hast_tree = () => (tree) => {
@@ -36,7 +35,7 @@ const katex_blocks = () => (tree) => {
 };
 
 const config = defineConfig({
-   extensions: ['.svelte.mdx', '.mdx', '.svx'],
+   extensions: ['.svelte.md', '.md', '.svx'],
 
    smartypants: {
       dashes: 'oldschool'
@@ -44,12 +43,6 @@ const config = defineConfig({
 
    remarkPlugins: [gfm, math, katex_blocks],
    rehypePlugins: [correct_hast_tree, rehype_katex],
-
-   frontmatter: {
-      marker: '+',
-      parse: toml.parse.bind(toml),
-      type: 'toml'
-   },
 
    layout: './src/components/post.svelte'
 });
