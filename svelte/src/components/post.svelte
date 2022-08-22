@@ -1,7 +1,8 @@
-<script lang="ts">
+<script>
+   // @ts-nocheck
    import ContentWrapper from '@/components/content-wrapper.svelte';
 
-   export let title: string;
+   export let title;
 </script>
 
 <svelte:head>
